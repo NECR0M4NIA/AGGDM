@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+    <title>AGGDM Launcher</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/AGGDM Logo.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-container">
+
+            <img class="logo" src="./assets/AGGDM.svg" alt="">
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="btn-container">
+
+            <a id="play-btn" href="#">PLAY</a>
+            <a id="gallery-btn" href="#">GALLERY</a>
+            <a id="settings-btn" href="#">SETTINGS</a>
+            <a id="exit-btn" href="#">EXIT</a>
+
+        </section>
+
+        <section class="gallery-container hidden">
+
+            <h1>GALLERY</h1>
+            <div class="gallery-item-1">
+                <img src="./assets/gallery/musk.jpg" alt="">
+            </div>
+            <div class="gallery-item-2">
+                <img src="./assets/gallery/trump.jpg" alt="">
+            </div>
+            <div class="gallery-item-3">
+                <img src="./assets/gallery/musk.jpg" alt="">
+            </div>
+            <div class="gallery-item-4">
+                <img src="./assets/gallery/musk.jpg" alt="">
+            </div>
+            <div class="gallery-item-5">
+                <img src="./assets/gallery/trump.jpg" alt="">
+            </div>
+            <div class="gallery-item-6">
+                <img src="./assets/gallery/musk.jpg" alt="">
+            </div>
+
+        </section>
+
+        <section class="settings-container hidden">
+
+            <h1>SETTINGS</h1>
+
+            <div class="graphics-settings">
+                <h2>GRAPHICS</h2>
+
+                <div class="setting-item">
+                    <label for="shadows">Shadows Quality:</label>
+                    <select id="shadows" name="shadows">
+                        <option value="off">Off</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                        <option value="ultra">Ultra</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label for="post-processing">Post Processing:</label>
+                    <select id="post-processing" name="post-processing">
+                        <option value="off">Off</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                        <option value="ultra">Ultra</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label for="anti-aliasing">Anti-Aliasing:</label>
+                    <select id="anti-aliasing" name="anti-aliasing">
+                        <option value="off">Off</option>
+                        <option value="fxaa">FXAA</option>
+                        <option value="smaa">SMAA</option>
+                        <option value="msaa2x">MSAA 2x</option>
+                        <option value="msaa4x">MSAA 4x</option>
+                        <option value="msaa8x">MSAA 8x</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label for="texture-quality">Texture Quality:</label>
+                    <select id="texture-quality" name="texture-quality">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                        <option value="ultra">Ultra</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label for="ambient-occlusion">Ambient Occlusion:</label>
+                    <select id="ambient-occlusion" name="ambient-occlusion">
+                        <option value="off">Off</option>
+                        <option value="ssao">SSAO</option>
+                        <option value="hbao">HBAO</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label for="motion-blur">Motion Blur:</label>
+                    <select id="motion-blur" name="motion-blur">
+                        <option value="off">Off</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="audio-settings">
+                <h2>Audio Settings</h2>
+
+                <div class="setting-item">
+                    <label for="master-volume">Master Volume:</label>
+                    <select id="master-volume" name="master-volume">
+                        <option value="0">Muted</option>
+                        <option value="20">20%</option>
+                        <option value="40">40%</option>
+                        <option value="60">60%</option>
+                        <option value="80">80%</option>
+                        <option value="100">100%</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label for="music-volume">Music Volume:</label>
+                    <select id="music-volume" name="music-volume">
+                        <option value="0">Muted</option>
+                        <option value="20">20%</option>
+                        <option value="40">40%</option>
+                        <option value="60">60%</option>
+                        <option value="80">80%</option>
+                        <option value="100">100%</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label for="sfx-volume">Sound Effects:</label>
+                    <select id="sfx-volume" name="sfx-volume">
+                        <option value="0">Muted</option>
+                        <option value="20">20%</option>
+                        <option value="40">40%</option>
+                        <option value="60">60%</option>
+                        <option value="80">80%</option>
+                        <option value="100">100%</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label for="voice-volume">Voice Volume:</label>
+                    <select id="voice-volume" name="voice-volume">
+                        <option value="0">Muted</option>
+                        <option value="20">20%</option>
+                        <option value="40">40%</option>
+                        <option value="60">60%</option>
+                        <option value="80">80%</option>
+                        <option value="100">100%</option>
+                    </select>
+                </div>
+
+                <div class="setting-item">
+                    <label for="audio-quality">Audio Quality:</label>
+                    <select id="audio-quality" name="audio-quality">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

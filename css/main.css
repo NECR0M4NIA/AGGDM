@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background: black;
+}
+
+.logo-container,
+.gallery-container {
+    position: relative;
+}
+
+.logo {
+    width: 496px;
+    position: fixed;
+    left: 48px;
+    top: -48px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 64px;
+    top: 360px;
+}
+
+#play-btn,
+#gallery-btn,
+#settings-btn,
+#exit-btn {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    text-decoration: none;
+    color: white;
+    margin: 8px 0;
+    transform: scale(1);
+    transition: 150ms ease-out;
+}
+
+#play-btn:hover,
+#gallery-btn:hover,
+#settings-btn:hover,
+#exit-btn:hover {
+    color: rgb(255, 0, 0);
+    transform: scale(1.025);
+}
+
+.hidden {
+    display: none;
+}
+
+.setttings-container,
+.audio-settings {
+    position: relative;
+}
+
+.graphics-settings {
+    position: absolute;
+    top: 178px;
+    left: 640px;
+}
+
+.audio-settings {
+    position: absolute;
+    top: 178px;
+    left: 880px;
+}
+
+.graphics-settings h2,
+.audio-settings h2 {
+    margin: 8px 0;
+}
+
+.graphics-settings,
+.audio-settings {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.gallery-item-1 {
+    position: absolute;
+    width: 204px;
+    top: 64px;
+    left: 720px;
+}
+
+.gallery-item-2 {
+    position: absolute;
+    width: 204px;
+    top: 64px;
+    left: 960px;
+}
+
+.gallery-item-3 {
+    position: absolute;
+    width: 204px;
+    top: 64px;
+    left: 1200px;
+}
+
+.gallery-item-4 {
+    position: absolute;
+    width: 204px;
+    top: 324px;
+    left: 720px;
+}
+
+.gallery-item-5 {
+    position: absolute;
+    width: 204px;
+    top: 324px;
+    left: 960px;
+}
+
+.gallery-item-6 {
+    position: absolute;
+    width: 204px;
+    top: 324px;
+    left: 1200px;
+}
+
+/* KEYFRAMES */
+
+@keyframes displayOff {
+
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+    
+}
+
+@keyframes logoXY {
+
+    0% {
+        left: 48px;
+        top: -48px;
+    }
+
+    100% {
+        left: 500px;
+        top: 150px;
+    }
+    
+}
+
+@keyframes logoScale {
+
+    0% {
+        transform: scale(1);
+        left: 500px;
+        top: 150px;
+        opacity: 100%;
+    }
+
+    100% {
+        transform: scale(1.5);
+        left: 500px;
+        top: 150px;
+        opacity: 0%;
+    }
+    
+}

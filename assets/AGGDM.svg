@@ -1,0 +1,12 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>New Project</title>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 48px;fill: #ffffff;font-weight: 700;font-family: "HansonBold", "Hanson" } 
+		.t1 { font-size: 48px;fill: #ff0000;font-weight: 700;font-family: "HansonBold", "Hanson" } 
+	</style>
+	<text id="AGGDM" style="transform: matrix(2.032,0,0,2.032,14.182,289.029)" >
+		<tspan x="0" y="0" class="t0">A</tspan><tspan  y="0" class="t0">G</tspan><tspan  y="0" class="t0">G</tspan><tspan  y="0" class="t1">D</tspan><tspan  y="0" class="t0">M</tspan><tspan  y="0" class="t0">
+</tspan>
+	</text>
+</svg>
