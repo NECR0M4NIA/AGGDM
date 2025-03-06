@@ -130,7 +130,7 @@ body {
 
 /* KEYFRAMES */
 
-@keyframes displayOff {
+@keyframes displayOn {
 
     0% {
         opacity: 100%;
@@ -140,6 +140,18 @@ body {
         opacity: 0%;
     }
     
+}
+
+@keyframes displayOff {
+
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+
 }
 
 @keyframes logoXY {

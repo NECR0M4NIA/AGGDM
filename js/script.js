@@ -10,10 +10,10 @@ const $settingsContainer = document.querySelector('.settings-container')
 
 // PLAY BUTTON //
 $playBtn.addEventListener('click', () => {
-    document.querySelector('#play-btn').style.animation = 'displayOff 750ms ease-in-out'
-    document.querySelector('#gallery-btn').style.animation = 'displayOff 750ms ease-in-out'
-    document.querySelector('#settings-btn').style.animation = 'displayOff 750ms ease-in-out'
-    document.querySelector('#exit-btn').style.animation = 'displayOff 750ms ease-in-out'
+    document.querySelector('#play-btn').style.animation = 'displayOn 750ms ease-in-out'
+    document.querySelector('#gallery-btn').style.animation = 'displayOn 750ms ease-in-out'
+    document.querySelector('#settings-btn').style.animation = 'displayOn 750ms ease-in-out'
+    document.querySelector('#exit-btn').style.animation = 'displayOn 750ms ease-in-out'
 
     setTimeout(() => {
         $playBtn.classList.add('hidden')
@@ -40,9 +40,12 @@ $galleryBtn.addEventListener('click', () => {
 
 // SETTINGS BUTTON //
 $settingsBtn.addEventListener('click', () => {
-    $settingsContainer.classList.toggle('hidden')
+    if ($settingsContainer.classList.contains('hidden')) {
+        $settingsContainer.style.animation = 'displayOn 750ms ease-in-out'
+    } else {
+        $settingsContainer.style.animation = 'displayOff 750ms ease-in-out'
+    }
 })
-
 // EXIT BUTTON //
 $exitBtn.addEventListener('click', () => {
     if (confirm('Are you sure you want to leave ?')) {
